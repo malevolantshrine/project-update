@@ -1,5 +1,5 @@
 ﻿Imports System.Media
-Public Class Form3
+Public Class form3
     Private originalWidth As Integer
     Private originalHeight As Integer
     Private previousForm As Form
@@ -23,9 +23,6 @@ Public Class Form3
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         originalWidth = Me.Width
         originalHeight = Me.Height
-    End Sub
-    Private Sub ButtonWeek_Click(sender As Object, e As EventArgs) Handles buttonweek.Click
-        Form2.Interval = If(Form2.Interval = 1, 2, 1)
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()

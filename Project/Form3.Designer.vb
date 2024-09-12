@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form3
+Partial Class form3
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -78,7 +78,7 @@ Partial Class Form3
         playbutton.Text = "Music"
         playbutton.UseVisualStyleBackColor = True
         ' 
-        ' Form3
+        ' form3
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
@@ -88,7 +88,7 @@ Partial Class Form3
         Controls.Add(Button3)
         Controls.Add(Button2)
         Controls.Add(Button1)
-        Name = "Form3"
+        Name = "form3"
         Text = "Form3"
         ResumeLayout(False)
         PerformLayout()
