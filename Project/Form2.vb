@@ -117,34 +117,39 @@
         richTextBox.SelectionLength = changeText.Length
         richTextBox.SelectionColor = If(percentageChange >= 0, Color.Green, Color.Red)
     End Sub
+    Private Sub RichTextBox_Click(sender As Object, e As EventArgs)
+        Dim popupform As New PopupForm()
+        popupform.Show()
+    End Sub
+
     Public Sub context()
         contextmenu = New ContextMenuStrip()
         richTextBox1 = New RichTextBox() With {
-    .Width = 200,
-    .Height = 40,
-    .Multiline = True,
-    .Text = $"GALC:{Environment.NewLine}GALACTIC INC{Environment.NewLine}{GALCVAL} (+0.0)"
-}
+        .Width = 200,
+        .Height = 40,
+        .Multiline = True,
+        .Text = $"GALC:{Environment.NewLine}GALACTIC INC{Environment.NewLine}{GALCVAL} (+0.0)"
+    }
         richTextBox1.Select(0, 5)
         richTextBox1.SelectionFont = New Font(richTextBox1.Font, FontStyle.Bold)
         richTextBox1.SelectionColor = Color.SteelBlue
 
         richTextBox2 = New RichTextBox() With {
-            .Width = 200,
-            .Height = 40,
-            .Multiline = True,
-            .Text = $"SAND:{Environment.NewLine}SANDPARTICLE{Environment.NewLine}{SANDVAL} (+0.0)"
-        }
+        .Width = 200,
+        .Height = 40,
+        .Multiline = True,
+        .Text = $"SAND:{Environment.NewLine}SANDPARTICLE{Environment.NewLine}{SANDVAL} (+0.0)"
+    }
         richTextBox2.Select(0, 5)
         richTextBox2.SelectionFont = New Font(richTextBox2.Font, FontStyle.Bold)
         richTextBox2.SelectionColor = Color.SteelBlue
 
         richTextBox3 = New RichTextBox() With {
-            .Width = 200,
-            .Height = 40,
-            .Multiline = True,
-            .Text = $"GPU:{Environment.NewLine}NVIDEAGPU{Environment.NewLine}{GPUVAL} (+0.0)"
-        }
+        .Width = 200,
+        .Height = 40,
+        .Multiline = True,
+        .Text = $"GPU:{Environment.NewLine}NVIDEAGPU{Environment.NewLine}{GPUVAL} (+0.0)"
+    }
         richTextBox3.Select(0, 4)
         richTextBox3.SelectionFont = New Font(richTextBox3.Font, FontStyle.Bold)
         richTextBox3.SelectionColor = Color.SteelBlue
@@ -157,40 +162,39 @@
         contextmenu.Items.Add(host3)
 
         Label1.Font = New Font("Arial", 14, FontStyle.Bold)
-        Label1.BackColor = Color.Black
+        Label1.BackColor = Color.Transparent
         Label1.ForeColor = Color.White
-        Label1.BorderStyle = BorderStyle.FixedSingle
         Label1.TextAlign = ContentAlignment.MiddleCenter
         Label1.Padding = New Padding(5)
 
         ContextMenuStrip1 = New ContextMenuStrip()
 
         richTextBox4 = New RichTextBox() With {
-            .Width = 200,
-            .Height = 40,
-            .Multiline = True,
-            .Text = $"HIGH:{Environment.NewLine}HIGHTOWERENERGY{Environment.NewLine}{HIGHVAL} (+0.0)"
-        }
+        .Width = 200,
+        .Height = 40,
+        .Multiline = True,
+        .Text = $"HIGH:{Environment.NewLine}HIGHTOWERENERGY{Environment.NewLine}{HIGHVAL} (+0.0)"
+    }
         richTextBox4.Select(0, 5)
         richTextBox4.SelectionFont = New Font(richTextBox4.Font, FontStyle.Bold)
         richTextBox4.SelectionColor = Color.SteelBlue
 
         richTextBox5 = New RichTextBox() With {
-            .Width = 200,
-            .Height = 40,
-            .Multiline = True,
-            .Text = $"OSCAR:{Environment.NewLine}OSCAR AIR{Environment.NewLine}{OSCARVAL} (+0.0)"
-        }
+        .Width = 200,
+        .Height = 40,
+        .Multiline = True,
+        .Text = $"OSCAR:{Environment.NewLine}OSCAR AIR{Environment.NewLine}{OSCARVAL} (+0.0)"
+    }
         richTextBox5.Select(0, 6)
         richTextBox5.SelectionFont = New Font(richTextBox5.Font, FontStyle.Bold)
         richTextBox5.SelectionColor = Color.SteelBlue
 
         richTextBox6 = New RichTextBox() With {
-            .Width = 200,
-            .Height = 40,
-            .Multiline = True,
-            .Text = $"OIL:{Environment.NewLine}OIL DRILLING{Environment.NewLine}{OILVAL} (+0.0)"
-        }
+        .Width = 200,
+        .Height = 40,
+        .Multiline = True,
+        .Text = $"OIL:{Environment.NewLine}OIL DRILLING{Environment.NewLine}{OILVAL} (+0.0)"
+    }
         richTextBox6.Select(0, 4)
         richTextBox6.SelectionFont = New Font(richTextBox6.Font, FontStyle.Bold)
         richTextBox6.SelectionColor = Color.SteelBlue
@@ -203,40 +207,39 @@
         ContextMenuStrip1.Items.Add(host6)
 
         Label2.Font = New Font("Arial", 14, FontStyle.Bold)
-        Label2.BackColor = Color.Black
+        Label2.BackColor = Color.Transparent
         Label2.ForeColor = Color.White
-        Label2.BorderStyle = BorderStyle.FixedSingle
         Label2.TextAlign = ContentAlignment.MiddleCenter
         Label2.Padding = New Padding(5)
 
         ContextMenuStrip2 = New ContextMenuStrip()
 
         richTextBox7 = New RichTextBox() With {
-            .Width = 200,
-            .Height = 40,
-            .Multiline = True,
-            .Text = $"BLEY:{Environment.NewLine}BULLSEYE{Environment.NewLine}{BLEYVAL} (+0.0)"
-        }
+        .Width = 200,
+        .Height = 40,
+        .Multiline = True,
+        .Text = $"BLEY:{Environment.NewLine}BULLSEYE{Environment.NewLine}{BLEYVAL} (+0.0)"
+    }
         richTextBox7.Select(0, 5)
         richTextBox7.SelectionFont = New Font(richTextBox7.Font, FontStyle.Bold)
         richTextBox7.SelectionColor = Color.SteelBlue
 
         richTextBox8 = New RichTextBox() With {
-            .Width = 200,
-            .Height = 40,
-            .Multiline = True,
-            .Text = $"COLA:{Environment.NewLine}MOCOLA DRINKS{Environment.NewLine}{COLAVAL} (+0.0)"
-        }
+        .Width = 200,
+        .Height = 40,
+        .Multiline = True,
+        .Text = $"COLA:{Environment.NewLine}MOCOLA DRINKS{Environment.NewLine}{COLAVAL} (+0.0)"
+    }
         richTextBox8.Select(0, 5)
         richTextBox8.SelectionFont = New Font(richTextBox8.Font, FontStyle.Bold)
         richTextBox8.SelectionColor = Color.SteelBlue
 
         richTextBox9 = New RichTextBox() With {
-            .Width = 200,
-            .Height = 40,
-            .Multiline = True,
-            .Text = $"CLRK:{Environment.NewLine}SARAH CLARK INC{Environment.NewLine}{CLRKVAL} (+0.0)"
-        }
+        .Width = 200,
+        .Height = 40,
+        .Multiline = True,
+        .Text = $"CLRK:{Environment.NewLine}SARAH CLARK INC{Environment.NewLine}{CLRKVAL} (+0.0)"
+    }
         richTextBox9.Select(0, 5)
         richTextBox9.SelectionFont = New Font(richTextBox9.Font, FontStyle.Bold)
         richTextBox9.SelectionColor = Color.SteelBlue
@@ -249,11 +252,19 @@
         ContextMenuStrip2.Items.Add(host9)
 
         Label3.Font = New Font("Arial", 14, FontStyle.Bold)
-        Label3.BackColor = Color.Black
+        Label3.BackColor = Color.Transparent
         Label3.ForeColor = Color.White
-        Label3.BorderStyle = BorderStyle.FixedSingle
         Label3.TextAlign = ContentAlignment.MiddleCenter
         Label3.Padding = New Padding(5)
+        AddHandler richTextBox1.Click, AddressOf RichTextBox_Click
+        AddHandler richTextBox2.Click, AddressOf RichTextBox_Click
+        AddHandler richTextBox3.Click, AddressOf RichTextBox_Click
+        AddHandler richTextBox4.Click, AddressOf RichTextBox_Click
+        AddHandler richTextBox5.Click, AddressOf RichTextBox_Click
+        AddHandler richTextBox6.Click, AddressOf RichTextBox_Click
+        AddHandler richTextBox7.Click, AddressOf RichTextBox_Click
+        AddHandler richTextBox8.Click, AddressOf RichTextBox_Click
+        AddHandler richTextBox9.Click, AddressOf RichTextBox_Click
     End Sub
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
         If contextMenuVisible Then
@@ -301,7 +312,7 @@
 
 
         moneylabel.Text = $"Money: ${userMoney}"
-        moneylabel.ForeColor = Color.PowderBlue
+        moneylabel.ForeColor = Color.Transparent
         moneylabel.Font = New Font("Arial", 16, FontStyle.Bold)
         moneylabel.Dock = DockStyle.Fill
         moneylabel.TextAlign = ContentAlignment.MiddleCenter
@@ -314,92 +325,13 @@
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        PictureBox2.Image = Image.FromFile("D:\Hefty boy\original_83093ea34391d9a149e767b741d746b2.gif")
+        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
         context()
         InitializeMoneyStrip()
-        AddHandler richTextBox1.Click, AddressOf RichTextBox_Click
-        AddHandler richTextBox2.Click, AddressOf RichTextBox_Click
-        AddHandler richTextBox3.Click, AddressOf RichTextBox_Click
-        AddHandler richTextBox4.Click, AddressOf RichTextBox_Click
-        AddHandler richTextBox5.Click, AddressOf RichTextBox_Click
-        AddHandler richTextBox6.Click, AddressOf RichTextBox_Click
-        AddHandler richTextBox7.Click, AddressOf RichTextBox_Click
-        AddHandler richTextBox8.Click, AddressOf RichTextBox_Click
-        AddHandler richTextBox9.Click, AddressOf RichTextBox_Click
     End Sub
-    Private Sub RichTextBox_Click(sender As Object, e As EventArgs) Handles richTextBox1.Click, richTextBox2.Click, richTextBox3.Click, richTextBox4.Click, richTextBox5.Click, richTextBox6.Click, richTextBox7.Click, richTextBox8.Click, richTextBox9.Click
-        Dim richTextBox As RichTextBox = CType(sender, RichTextBox)
-        Dim companyName As String = ""
-        Dim description As String = ""
-        Dim currentValue As Double = 0
-        Dim previousValue As Double = 0
-
-        Select Case richTextBox.Name
-            Case "richTextBox1"
-                companyName = "GALACTIC INC"
-                description = "Galactic Inc is a leading space exploration company."
-                currentValue = GALCVAL
-                previousValue = previousGALCVAL
-            Case "richTextBox2"
-                companyName = "SANDPARTICLE"
-                description = "SandParticle specializes in advanced materials."
-                currentValue = SANDVAL
-                previousValue = previousSANDVAL
-            Case "richTextBox3"
-                companyName = "NVIDEA"
-                description = "NVIDEA is a global leader in graphics processing technology."
-                currentValue = GPUVAL
-                previousValue = previousGPUVAL
-            Case "richTextBox4"
-                companyName = "HIGHTOWER ENERGY"
-                description = "Hightower Energy focuses on renewable energy solutions."
-                currentValue = HIGHVAL
-                previousValue = previousHIGHVAL
-            Case "richTextBox5"
-                companyName = "OSCAR AIR"
-                description = "Oscar Air is a major airline company."
-                currentValue = OSCARVAL
-                previousValue = previousOSCARVAL
-            Case "richTextBox6"
-                companyName = "OIL DRILLING"
-                description = "Oil Drilling is involved in oil exploration and production."
-                currentValue = OILVAL
-                previousValue = previousOILVAL
-            Case "richTextBox7"
-                companyName = "BULLSEYE"
-                description = "Bullseye is a leading retail company."
-                currentValue = BLEYVAL
-                previousValue = previousBLEYVAL
-            Case "richTextBox8"
-                companyName = "MOCOLA DRINKS"
-                description = "Mocola Drinks is a popular beverage company."
-                currentValue = COLAVAL
-                previousValue = previousCOLAVAL
-            Case "richTextBox9"
-                companyName = "SARAH CLARK INC"
-                description = "Sarah Clark Inc is a renowned fashion brand."
-                currentValue = CLRKVAL
-                previousValue = previousCLRKVAL
-        End Select
-
-        Dim infoForm As New CompanyInfoForm(companyName, description, currentValue, previousValue)
-        infoForm.ShowDialog()
-    End Sub
-
-
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Me.Hide()
         form4.Show()
-    End Sub
-End Class
-Public Class PopupForm
-    Inherits Form
-
-    Public Sub New()
-        Me.Text = "Popup Form"
-        Me.Size = New Size(400, 300)
-    End Sub
-    Private Sub PopupForm_LostFocus(sender As Object, e As EventArgs)
-        Dim popupForm As PopupForm = CType(sender, PopupForm)
-        popupForm.Close()
     End Sub
 End Class

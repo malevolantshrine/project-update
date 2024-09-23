@@ -15,7 +15,7 @@ Public Module ShapeHelper
 End Module
 Public Class form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        PictureBox1.Image = Image.FromFile("D:\Hefty boy\2ac80441d7ff24ae2d68e9ea168adea7.gif")
+        PictureBox1.Image = Image.FromFile("D:\Hefty boy\original_83093ea34391d9a149e767b741d746b2.gif")
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         button1.Size = New Size(240, 50)
         button2.Size = New Size(240, 50)
@@ -64,6 +64,10 @@ Public Class form1
     End Sub
     Private Sub button4_Click(sender As Object, e As EventArgs) Handles button4.Click
         Close()
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
     End Sub
 End Class
 

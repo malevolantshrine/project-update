@@ -49,10 +49,12 @@ Partial Class Form2
         moneypanel = New Panel()
         moneylabel = New Label()
         weekcnt = New Label()
+        PictureBox2 = New PictureBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         contextmenu.SuspendLayout()
         ContextMenuStrip1.SuspendLayout()
         ContextMenuStrip2.SuspendLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' button5
@@ -244,6 +246,15 @@ Partial Class Form2
         weekcnt.TabIndex = 29
         weekcnt.Text = "week:0"
         ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.Dock = DockStyle.Fill
+        PictureBox2.Location = New Point(0, 0)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(800, 450)
+        PictureBox2.TabIndex = 30
+        PictureBox2.TabStop = False
+        ' 
         ' Form2
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -263,12 +274,15 @@ Partial Class Form2
         Controls.Add(btnQuit)
         Controls.Add(PictureBox1)
         Controls.Add(button5)
+        Controls.Add(PictureBox2)
+        ForeColor = SystemColors.ControlLight
         Name = "Form2"
         Text = "Form2"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         contextmenu.ResumeLayout(False)
         ContextMenuStrip1.ResumeLayout(False)
         ContextMenuStrip2.ResumeLayout(False)
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -301,4 +315,5 @@ Partial Class Form2
     Friend WithEvents moneypanel As Panel
     Friend WithEvents moneylabel As Label
     Friend WithEvents weekcnt As Label
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

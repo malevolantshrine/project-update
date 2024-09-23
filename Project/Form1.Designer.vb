@@ -75,7 +75,7 @@ Partial Class form1
         PictureBox1.TabIndex = 4
         PictureBox1.TabStop = False
         ' 
-        ' Form1
+        ' form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
@@ -84,7 +84,7 @@ Partial Class form1
         Controls.Add(button4)
         Controls.Add(button1)
         Controls.Add(PictureBox1)
-        Name = "Form1"
+        Name = "form1"
         Text = "Form1"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)

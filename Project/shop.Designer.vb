@@ -22,9 +22,15 @@ Partial Class shop
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "shop"
+        SuspendLayout()
+        ' 
+        ' shop
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
+        Name = "shop"
+        Text = "shop"
+        ResumeLayout(False)
     End Sub
 End Class
