@@ -24,12 +24,12 @@ Partial Class popupform
     Private Sub InitializeComponent()
         SuspendLayout()
         ' 
-        ' popupform
+        ' PopupForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
-        Name = "popupform"
+        Name = "PopupForm"
         Text = "popupform1"
         ResumeLayout(False)
     End Sub

@@ -110,16 +110,14 @@
         richTextBox.AppendText(fullName & Environment.NewLine)
 
         richTextBox.AppendText($"{newValue:F4}")
-
-        ' Highlight the percentage change
         richTextBox.AppendText(Environment.NewLine & changeText)
         richTextBox.SelectionStart = richTextBox.Text.IndexOf(changeText)
         richTextBox.SelectionLength = changeText.Length
         richTextBox.SelectionColor = If(percentageChange >= 0, Color.Green, Color.Red)
     End Sub
     Private Sub RichTextBox_Click(sender As Object, e As EventArgs)
-        Dim popupform As New PopupForm()
-        popupform.Show()
+        Dim popupForm As New PopupForm()
+        popupForm.Show()
     End Sub
 
     Public Sub context()
